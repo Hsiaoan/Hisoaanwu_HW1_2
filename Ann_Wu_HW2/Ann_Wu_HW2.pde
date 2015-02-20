@@ -65,7 +65,7 @@ void setup(){
      
 }
 void draw(){
-
+    background(0);
   // draw something awesome with the data matrix and headers array
   // to access individual data cells all you have to do is call data[row][col],
   // where row is an int row number, and col is an int column number
@@ -76,7 +76,11 @@ void draw(){
      float c=random(20,255);
      stroke(a, b, c);
      strokeWeight(10);
-      line(j*100+20,i*20+20,j*100+20+data[i][j]/200,i*20+20);
+     
+     textSize(20);
+     fill(255);
+     text(str(data[i][0]),0*100+50+data[i][0]/200+20, i*20+60);
+     line(j*100+150,i*20+50,j*100+150+data[i][j]/200,i*20+50);
          }
      
       }
