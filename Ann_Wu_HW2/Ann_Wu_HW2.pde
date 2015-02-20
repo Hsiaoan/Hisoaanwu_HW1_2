@@ -14,6 +14,8 @@ void setup(){
   // load csv file into String array
   String [] lines = loadStrings("Cyclist_Count_by_Year_At_Selected_Commuter_Locations.csv");
   size(1900,1900);
+  background(10);
+  
   
   //split the first line into an array and load it into our global headers array
   headers = split(lines[0], ",");
@@ -60,18 +62,25 @@ void setup(){
       }
     }
   }
-  
+     
 }
 void draw(){
+
   // draw something awesome with the data matrix and headers array
   // to access individual data cells all you have to do is call data[row][col],
   // where row is an int row number, and col is an int column number
   for(int i=0;i<data.length;i++){ 
     for(int j=0;j<data[i].length;j++){
-      strokeWeight(10);
+     float a=random(20,255);
+     float b=random(20,255);
+     float c=random(20,255);
+     stroke(a, b, c);
+     strokeWeight(10);
       line(j*100+20,i*20+20,j*100+20+data[i][j]/200,i*20+20);
-    }
+         }
+     
+      }
   
   }
-  
-}
+   
+
