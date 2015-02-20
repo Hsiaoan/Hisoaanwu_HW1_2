@@ -19,7 +19,7 @@ void setup(){
   
   //split the first line into an array and load it into our global headers array
   headers = split(lines[0], ",");
-  
+  println(headers[0]);
   //create a temporary 2D String array.
   //we'll think of it as a 28 row x 9 column matrix
   String[][] tempData = new String[lines.length-1][headers.length];
@@ -75,12 +75,14 @@ void draw(){
      float b=random(20,255);
      float c=random(20,255);
      stroke(a, b, c);
-     strokeWeight(10);
+     strokeWeight(20);
      
      textSize(20);
      fill(255);
      text(str(data[i][0]),0*100+50+data[i][0]/200+20, i*20+60);
-     line(j*100+150,i*20+50,j*100+150+data[i][j]/200,i*20+50);
+     textSize(10);
+     text(headers[j],j*100+50+data[0][j]/200, 0*20+20);
+     line(j*100+150,i*20+50,j*100+150+data[i][j]/100,i*20+50);
          }
      
       }
