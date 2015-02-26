@@ -62,6 +62,8 @@ void setup(){
       }
     }
   }
+ 
+ frameRate(0.5);
      
 }
 void draw(){
