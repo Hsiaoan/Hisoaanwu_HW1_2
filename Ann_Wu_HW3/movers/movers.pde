@@ -13,7 +13,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(0);
 
   for (int i = 0; i < movers.length; i++) {
 

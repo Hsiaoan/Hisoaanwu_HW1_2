@@ -28,6 +28,7 @@ class Mover {
   }
 
   void display() {
+    
     stroke(0);
     strokeWeight(6);
     smooth(10);
