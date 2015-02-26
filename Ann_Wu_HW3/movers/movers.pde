@@ -6,7 +6,7 @@ Mover[] movers = new Mover[5];
 
 void setup() {
   size(383, 200);
-  randomSeed(5);
+  randomSeed(1);
   for (int i = 0; i < movers.length; i++) {
     movers[i] = new Mover(random(1,8), random(width), 0);
   }

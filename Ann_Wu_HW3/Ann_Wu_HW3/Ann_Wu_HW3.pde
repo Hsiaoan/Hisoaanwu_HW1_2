@@ -2,18 +2,18 @@
 // Daniel Shiffman
 // http://natureofcode.com
 
-Mover[] movers = new Mover[5];
+Mover[] movers = new Mover[9];
 
 void setup() {
   size(383, 200);
-  randomSeed(5);
+  randomSeed(4);
   for (int i = 0; i < movers.length; i++) {
-    movers[i] = new Mover(random(1,8), random(width), 0);
+    movers[i] = new Mover(random(1,9), random(width), 0);
   }
 }
 
 void draw() {
-  background(255);
+  background(0);
 
   for (int i = 0; i < movers.length; i++) {
 
