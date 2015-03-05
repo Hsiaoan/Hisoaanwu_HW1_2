@@ -31,15 +31,15 @@ void draw(){
  line(330*cos(angle), 330*sin(angle), 359*cos(angle), 359*sin(angle));//make the scale indication distribute evenly on the clock
  }
 
-  angle = (minute() / 59.0) * TWO_PI;// make the indicator move by minute
+  float angleM = (minute() / 59.0) * TWO_PI;// make the indicator move by minute
   stroke(24,130,180);
-  line(0,0,second()*6*cos(angle),second()*6*sin(angle));//make the indicator grow by second
-  
-  
- 
-
+  line(0,0,second()*6*cos(angleM),second()*6*sin(angleM));//make the indicator grow by second
   ellipse(x,y,0,0);
   
+  float angleH = (hour() / 59.0) * TWO_PI;
+  stroke(100,40,200);
+  strokeWeight(20);
+  line(0,0,100*cos(angleH),100*sin(angleH)); // make the indicator move by hour
 }
   
   
