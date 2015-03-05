@@ -21,6 +21,7 @@ void draw(){
   ellipse(0,0,750, 750);
   ellipse(0,0,5,5);
   strokeWeight(15); 
+  rotate(PI+HALF_PI);//adjust the clock direction)
   
    
   
