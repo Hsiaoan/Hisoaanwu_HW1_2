@@ -36,7 +36,7 @@ void draw(){
   line(0,0,second()*6*cos(angleM),second()*6*sin(angleM));//make the indicator grow by second
   ellipse(x,y,0,0);
   
-  float angleH = (hour() / 59.0) * TWO_PI;
+  float angleH = (hour() / 12.0) * TWO_PI;
   stroke(100,40,200);
   strokeWeight(20);
   line(0,0,100*cos(angleH),100*sin(angleH)); // make the indicator move by hour
