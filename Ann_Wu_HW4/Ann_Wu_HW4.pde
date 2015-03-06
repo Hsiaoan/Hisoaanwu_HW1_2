@@ -16,7 +16,7 @@ void draw(){
   background(25);
   translate(width/2, height/2);//display the clocck
   ellipseMode(CENTER);
-  fill(230,180,110);
+  fill(81,42,16);
   noStroke();
   ellipse(0,0,750, 750);
   ellipse(0,0,5,5);
@@ -28,17 +28,17 @@ void draw(){
  for (int i=0; i<12;i++){ //for the scale indication
  float angle=TWO_PI/12*i;
  strokeWeight(20);
- stroke(60,180,60);
+ stroke(63,175,145);
  line(330*cos(angle), 330*sin(angle), 359*cos(angle), 359*sin(angle));//make the scale indication distribute evenly on the clock
  }
 
   float angleM = (minute() / 59.0) * TWO_PI;// make the indicator move by minute
-  stroke(24,130,180);
+  stroke(255,255,153);
   line(0,0,second()*6*cos(angleM),second()*6*sin(angleM));//make the indicator grow by second
   ellipse(x,y,0,0);
   
   float angleH = (hour() / 12.0) * TWO_PI;
-  stroke(100,40,200);
+  stroke(255,65,116);
   strokeWeight(20);
   line(0,0,100*cos(angleH),100*sin(angleH)); // make the indicator move by hour
 }
