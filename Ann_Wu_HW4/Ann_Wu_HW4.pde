@@ -14,7 +14,7 @@ void setup(){
 
 void draw(){
   background(25);
-  translate(width/2, height/2);//display the clocck
+  translate(mouseX, mouseY);//display the clocck by by moving mouse
   ellipseMode(CENTER);
   fill(128,128,128);
   noStroke();
