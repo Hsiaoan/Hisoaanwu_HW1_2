@@ -1,7 +1,7 @@
 void setup(){
   size(900, 400);
   float x1, y1, x2, y2; // 2 points and i
- for (int i=0; i<50; i++) {//i as for line 
+ for (int i=0; i<50; i++) {//i as for condition to execute it
    x1=random(0,900);// the range
    y1=random(0,400);
    x2=random(0,900);
