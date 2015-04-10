@@ -24,12 +24,12 @@ void setup(){
 }
 
 void draw(){
-  background(bg);
+  background(bg);// using the picture I downloaded as the background
   PVector head = (PVector)snake.get(0);
   head.add(vel);
   
   if (head.x > width){
-    noLoop();
+    noLoop();// make the game end whenever the snakehead touch the edge
   }else if (head.x < 0){
     noLoop();
   }
@@ -54,7 +54,7 @@ void draw(){
    
   }
   //make one follow another
-   fill(color(0,0,102));//stroke(0);strokeWeight();
+   fill(color(0,0,102));
    ellipse(head.x, head.y, r, r);
   // above are for snake's head
   
@@ -87,7 +87,7 @@ void keyPressed(){
         vel = new PVector(0,s); 
       }
      } 
-   }
+   }// make keys "a","s","d","w" to control the moving direction
 
 
   
